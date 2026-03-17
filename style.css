@@ -184,9 +184,18 @@ nav a {
     text-transform: uppercase;
     letter-spacing: 2px;
 }
-
 .page-header p {
     font-size: 1.1rem;
     color: #bdc3c7;
     margin-top: 10px;
+}
+.content-area {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 8px;
+    margin-top: -30px; /* Overlaps the header slightly for a modern look */
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
