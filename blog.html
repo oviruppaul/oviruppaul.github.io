@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Veterinary Insights Blog | Dr. Ovirup Bhushan Paul</title>
+    <title>Livestock Disease Blog | Dr. Ovirup Bhushan Paul</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -14,59 +15,117 @@
     <a href="research.html">Research</a>
     <a href="publications.html">Publications</a>
     <a href="services.html">Services</a>
-    <a href="blog.html" class="active">Blog</a> <a href="contact.html">Contact</a>
+    <a href="blog.html" class="active">Blog</a>
+    <a href="contact.html">Contact</a>
 </nav>
 
-<section class="content fade-in">
-    <header class="blog-header">
-        <h1>Veterinary & Dairy Insights</h1>
-        <p>Daily updates on animal diseases, dairy management, and epidemiology in Bangladesh.</p>
-        <p><em>নিচে বাংলা এবং ইংরেজি উভয় ভাষায় নিবন্ধগুলো পাওয়া যাবে।</em></p>
-    </header>
+<header class="page-header">
+    <h1>Infectious & Zoonotic Disease Registry</h1>
+    <p>Epidemiological Updates for the Livestock Sector in Bangladesh</p>
+</header>
 
+<section class="content content-area">
     <div class="blog-grid">
         
-        <article class="blog-card">
-            <div class="blog-image" style="background-image: url('disease-image.jpg');"></div>
+        <div class="blog-card">
+            <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1541014521752-94f4a38612f0?q=80&w=400');"></div>
             <div class="blog-content">
-                <span class="blog-date">March 17, 2026</span>
-                <h2>Bovine Ephemeral Fever (BEF) Control</h2>
-                <h3>লাম্পি স্কিন ডিজিজ ও প্রতিকার</h3>
-                <p><strong>EN:</strong> Quick overview of BEF management in commercial dairy herds...</p>
-                <p><strong>BN:</strong> বাংলাদেশের ডেইরি খামারে বর্তমান সময়ের একটি বড় সমস্যা হলো...</p>
-                <a href="post-link.html" class="read-more">Read Full 1000-word Article →</a>
+                <span class="category-tag">Viral</span>
+                <h3>Lumpy Skin Disease (LSD)</h3>
+                <p class="eng-text">
+                    <strong>Prevalence:</strong> Recent studies show a 15-25% morbidity rate in affected districts. <br>
+                    <strong>Mortality:</strong> Generally low (1-5%), but economic loss is high due to 40% reduction in milk and permanent hide damage. <br>
+                    <strong>Insight:</strong> Primarily transmitted by Capripoxvirus via biting insects. Mass vaccination with Goat Pox vaccine is the current BLRI recommendation for field control.
+                </p>
+                <p class="bng-text" style="display:none;">
+                    <strong>প্রাদুর্ভাব:</strong> আক্রান্ত জেলাগুলোতে ১৫-২৫%। <br>
+                    <strong>মৃত্যুহার:</strong> ১-৫%, তবে দুধ উৎপাদন এবং চামড়ার গুণমান হ্রাসের কারণে অর্থনৈতিক ক্ষতি অনেক বেশি।
+                </p>
+                <span class="lang-toggle" onclick="toggleLang(this)">Translate to বাংলা</span>
+                <div class="share-buttons">
+                    <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
             </div>
-        </article>
         </div>
+
+        <div class="blog-card">
+            <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1596733430284-f7437764b1a9?q=80&w=400');"></div>
+            <div class="blog-content">
+                <span class="category-tag">Viral</span>
+                <h3>Foot and Mouth Disease (FMD)</h3>
+                <p class="eng-text">
+                    <strong>Prevalence:</strong> Endemic in Bangladesh; Serotype O, A, and Asia-1 are most common. <br>
+                    <strong>Mortality:</strong> High in calves (up to 50% due to myocarditis), lower in adults. <br>
+                    <strong>Current Status:</strong> Annual economic loss exceeds $125 million USD. Biosecurity and trivalent vaccines are critical for prevention in commercial dairy farms.
+                </p>
+                <p class="bng-text" style="display:none;">খুরারোগ বাংলাদেশে একটি এন্ডেমিক রোগ। বাছুরের ক্ষেত্রে মৃত্যুহার ৫০% পর্যন্ত হতে পারে।</p>
+                <span class="lang-toggle" onclick="toggleLang(this)">Translate to বাংলা</span>
+                <div class="share-buttons">
+                    <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1581594549595-35e6edca752f?q=80&w=400');"></div>
+            <div class="blog-content">
+                <span class="category-tag">Zoonotic</span>
+                <h3>Bovine Brucellosis</h3>
+                <p class="eng-text">
+                    <strong>Prevalence:</strong> Approximately 4-8% in dairy cows. <br>
+                    <strong>Impact:</strong> Causes abortion in the 3rd trimester. <br>
+                    <strong>Zoonosis:</strong> High risk for veterinarians and milkers. Transmission occurs through raw milk consumption and contact with placenta.
+                </p>
+                <p class="bng-text" style="display:none;">ব্রুসেলোসিস গাভীর শেষ ৩ মাসে গর্ভপাতের প্রধান কারণ। এটি একটি অত্যন্ত ঝুঁকিপূর্ণ জুনোটিক রোগ।</p>
+                <span class="lang-toggle" onclick="toggleLang(this)">Translate to বাংলা</span>
+                <div class="share-buttons">
+                    <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1534067783941-51c9c23ecefd?q=80&w=400');"></div>
+            <div class="blog-content">
+                <span class="category-tag">Zoonotic</span>
+                <h3>Nipah Virus (NiV)</h3>
+                <p class="eng-text">
+                    <strong>Prevalence:</strong> Seasonal (Winter), centered in the "Nipah Belt" (Central/North-West). <br>
+                    <strong>Mortality:</strong> Extremely high in humans (70%+). <br>
+                    <strong>Link:</strong> Pteropus bats contaminate date palm sap. While ruminants aren't the primary host in BD, zoonotic spillover is a top public health priority.
+                </p>
+                <span class="lang-toggle" onclick="toggleLang(this)">Translate to বাংলা</span>
+                <div class="share-buttons">
+                    <a href="#"><i class="fab fa-facebook"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="pagination">
+        <a href="#" class="active">1</a>
+        <a href="#">2</a>
+        <a href="#">Next &raquo;</a>
+    </div>
 </section>
 
-<footer class="main-footer">
-    <div class="footer-container">
-        <div class="footer-section branding">
-            <div class="footer-logo">
-                <span class="footer-icon">🩺</span> <h3>Dr. Ovirup Bhushan Paul</h3>
-            </div>
-            <p>Providing expert Veterinary Epidemiology & Dairy Consultancy services across Bangladesh.</p>
-        </div>
-
-        <div class="footer-section contact-info">
-            <h4>Get In Touch</h4>
-            <p>📞 <strong>Phone:</strong> +880 1777-116592</p>
-            <p>✉️ <strong>Email:</strong> oviruppal@gmail.com</p>
-        </div>
-
-        <div class="footer-section location">
-            <h4>Location</h4>
-            <p>📍 Bangladesh Livestock Research Institute (BLRI),<br>
-            Savar, Dhaka-1341, Bangladesh.</p>
-            <a href="https://maps.app.goo.gl/VEhYr3KxU4CLfBgr9" target="_blank" class="map-link">View on Google Maps →</a>
-        </div>
-    </div>
-    
-    <div class="footer-bottom">
-        <p>&copy; 2026 Dr. Ovirup Bhushan Paul | Scientific Officer, BLRI. All Rights Reserved.</p>
-    </div>
-</footer>
+<script>
+    function toggleLang(btn) {
+        const card = btn.parentElement;
+        const eng = card.querySelector('.eng-text');
+        const bng = card.querySelector('.bng-text');
+        if (eng.style.display === "none") {
+            eng.style.display = "block";
+            bng.style.display = "none";
+            btn.innerText = "Translate to বাংলা";
+        } else {
+            eng.style.display = "none";
+            bng.style.display = "block";
+            btn.innerText = "Translate to English";
+        }
+    }
+</script>
 
 </body>
 </html>
