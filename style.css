@@ -418,3 +418,76 @@ nav a {
     background: #eee;
     color: #555;
 }
+/* Research Page Specific Styles */
+.research-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    border-left: 6px solid #2c3e50;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    border-left-color: #f1c40f;
+    transform: translateY(-5px);
+}
+
+.project-year {
+    font-weight: 800;
+    color: #f1c40f;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.project-role {
+    display: inline-block;
+    background: #eef2f3;
+    color: #2c3e50;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.project-title {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.funder-info {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Awards Section */
+.award-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff9e6;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #f1c40f;
+}
+
+.award-icon {
+    font-size: 2.5rem;
+    color: #f1c40f;
+}
