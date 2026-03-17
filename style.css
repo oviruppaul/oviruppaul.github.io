@@ -1,1 +1,66 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fb;
+}
 
+/* HERO IMAGE */
+.hero {
+    height: 100vh;
+    background: url('buffalo.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    background: #3498db;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #2980b9;
+}
+
+/* NAV */
+nav {
+    background: #2c3e50;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 15px;
+    text-decoration: none;
+}
+
+/* CONTENT */
+.content {
+    padding: 60px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* ANIMATION */
+.fade-in {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
