@@ -207,3 +207,58 @@ footer {
     max-width: 700px;
     margin: 0 auto;
 }
+.top-info-bar {
+    background: #2c3e50; /* Deep landscape blue */
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 0.85rem;
+    border-bottom: 3px solid #3498db;
+}
+
+.top-info-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #3498db; /* Bright blue for the service name */
+}
+
+.service-icon {
+    font-size: 1.5rem;
+    margin-right: 8px;
+}
+
+.map-area a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.map-area a:hover {
+    color: #3498db;
+}
+
+.contact-area span {
+    margin-left: 20px;
+}
+
+/* Mobile Responsive: Stacks the bar on small screens */
+@media (max-width: 768px) {
+    .top-info-bar .container {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+    .contact-area span {
+        margin: 0 10px;
+        display: block;
+    }
+}
