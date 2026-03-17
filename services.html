@@ -3,8 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | Dr. Ovirup Bhushan Paul</title>
+    <title>Professional Services | Dr. Ovirup Bhushan Paul</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Special Styling for Service Cards */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .service-card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 5px solid #2c3e50;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-top: 5px solid #f1c40f; /* Turns Gold on hover */
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .service-card h3 {
+            color: #2c3e50;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .service-card p {
+            color: #555;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+    </style>
 </head>
 <body>
 
@@ -18,46 +59,44 @@
     <a href="contact.html">Contact</a>
 </nav>
 
-<section class="content fade-in">
+<header class="page-header">
     <h1>Professional Services</h1>
-    <p class="intro-text">Providing expert veterinary solutions and evidence-based management strategies to enhance the livestock sector in Bangladesh.</p>
+    <p>Expert Veterinary & Epidemiological Consultancy</p>
+</header>
 
-    <div class="services-container">
+<section class="content content-area">
+    <div class="services-grid">
+        
         <div class="service-card">
-            <div class="icon">🐄</div>
+            <span class="service-icon">🐄</span>
             <h3>Dairy Farm Consultant</h3>
-            <p>Specialized consultancy for establishing and scaling commercial dairy operations, focusing on productivity, sustainability, and economic efficiency.</p>
+            <p>Comprehensive farm management plans focusing on nutrition, reproduction, and maximizing milk production for commercial dairy herds.</p>
         </div>
 
         <div class="service-card">
-            <div class="icon">🩺</div>
+            <span class="service-icon">💊</span>
             <h3>Large Animal Treatment</h3>
-            <p>Expert clinical care and surgical interventions for cattle and buffalo, ensuring high recovery rates and animal welfare standards.</p>
+            <p>Specialized veterinary clinical services for buffaloes and cattle, focusing on evidence-based medicine and surgical interventions.</p>
         </div>
 
         <div class="service-card">
-            <div class="icon">📊</div>
-            <h3>Farm Management</h3>
-            <p>Implementing systematic biosecurity, nutrition plans, and record-keeping systems to streamline daily farm operations and maximize profit.</p>
-        </div>
-
-        <div class="service-card">
-            <div class="icon">🔍</div>
+            <span class="service-icon">📊</span>
             <h3>Disease Surveillance</h3>
-            <p>Utilizing epidemiological tools (STATA, ArcGIS) to monitor disease trends, investigate outbreaks, and design effective prevention strategies.</p>
+            <p>Epidemiological monitoring and outbreak investigation to track and prevent the spread of infectious diseases in livestock populations.</p>
         </div>
 
         <div class="service-card">
-            <div class="icon">🧪</div>
-            <h3>Laboratory Diagnosis</h3>
-            <p>Comprehensive bacteriological, molecular, and serological testing to identify pathogens accurately and guide effective treatment protocols.</p>
+            <span class="service-icon">🔬</span>
+            <h3>Laboratory Disease Diagnosis</h3>
+            <p>Advanced diagnostic services including sample collection, processing, and interpretation of laboratory results for precise disease identification.</p>
         </div>
 
         <div class="service-card">
-            <div class="icon">🥛</div>
+            <span class="service-icon">🧼</span>
             <h3>Udder Health Management</h3>
-            <p>Advanced mastitis control programs and milk quality assurance through "Decision Tree" protocols to reduce economic losses in dairy herds.</p>
+            <p>Specialized programs for mastitis control, milk quality improvement, and implementing scientific milking protocols to ensure herd productivity.</p>
         </div>
+
     </div>
 </section>
 
@@ -67,25 +106,20 @@
             <div class="footer-logo">
                 <span class="footer-icon">🩺</span> <h3>Dr. Ovirup Bhushan Paul</h3>
             </div>
-            <p>Providing expert Veterinary Epidemiology & Dairy Consultancy services across Bangladesh.</p>
+            <p>Scientific Officer at BLRI. Dedicated to Veterinary Epidemiology and Sustainable Dairy Systems.</p>
         </div>
-
         <div class="footer-section contact-info">
             <h4>Get In Touch</h4>
-            <p>📞 <strong>Phone:</strong> +880 1777-116592</p>
-            <p>✉️ <strong>Email:</strong> oviruppal@gmail.com</p>
+            <p>📞 +880 1777-116592</p>
+            <p>✉️ oviruppal@gmail.com</p>
         </div>
-
         <div class="footer-section location">
             <h4>Location</h4>
-            <p>📍 Bangladesh Livestock Research Institute (BLRI),<br>
-            Savar, Dhaka-1341, Bangladesh.</p>
-            <a href="https://maps.app.goo.gl/VEhYr3KxU4CLfBgr9" target="_blank" class="map-link">View on Google Maps →</a>
+            <p>📍 BLRI, Savar, Dhaka-1341, Bangladesh</p>
         </div>
     </div>
-    
     <div class="footer-bottom">
-        <p>&copy; 2026 Dr. Ovirup Bhushan Paul | Scientific Officer, BLRI. All Rights Reserved.</p>
+        <p>© 2026 Dr. Ovirup Bhushan Paul | All Rights Reserved.</p>
     </div>
 </footer>
 
