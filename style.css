@@ -284,3 +284,18 @@ nav a {
     color: white;
     border: 1px solid #2c3e50;
 }
+.blog-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    height: 150px; /* Limits height so cards stay even */
+    overflow-y: auto; /* Adds a scrollbar if text is very long */
+    padding-right: 5px;
+}
+/* Scrollbar styling for a premium look */
+.blog-card p::-webkit-scrollbar {
+    width: 4px;
+}
+.blog-card p::-webkit-scrollbar-thumb {
+    background: #bdc3c7;
+    border-radius: 10px;
+}
