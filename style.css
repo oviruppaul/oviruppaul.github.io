@@ -76,21 +76,35 @@ body, html {
     margin-top: 10px;
 }
 
-/* NAVIGATION BAR */
+/* UPDATED HIGH-CONTRAST NAVIGATION */
 nav {
     background: #2c3e50;
-    padding: 15px;
     text-align: center;
+    padding: 15px 0;
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
+    color: #bdc3c7; /* Light grey for unselected links */
     margin: 0 15px;
-    font-weight: bold;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem; /* Slightly larger */
+    transition: 0.3s;
+}
+
+/* This is the part that changes the color when the reader is on that page */
+nav a.active {
+    color: #f1c40f !important; /* Bright Gold/Yellow */
+    font-weight: 800 !important; /* Extra Bold */
+    border-bottom: 3px solid #f1c40f; /* Adds an underline for extra focus */
+    padding-bottom: 5px;
+}
+
+nav a:hover {
+    color: white;
 }
 
 /* CONTENT AREA */
