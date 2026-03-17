@@ -167,3 +167,26 @@ nav a {
     color: white !important;
     opacity: 1 !important;
 }
+/* SUB-PAGE HEADER STYLING */
+.page-header {
+    background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)), url('image1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 4px solid #f1c40f; /* Matching the Gold from your Nav bar */
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #bdc3c7;
+    margin-top: 10px;
+}
